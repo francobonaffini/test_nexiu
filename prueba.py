@@ -25,7 +25,7 @@ def format_dates(mode,input_date):
         # Si el día no es el de fin de mes, acomienza en el siguiente mes ya restado
         if two_years_ago.day != ultimo_dia_numero :
 
-            print("NOT Last day of mont")
+            print("NOT Last day of month")
 
             fecha_actual2 = two_years_ago + relativedelta(months=1)
             fecha_actual2 = fecha_actual2.replace(day=1)
@@ -60,7 +60,7 @@ def format_dates(mode,input_date):
                 
         # Si el día es el de fin de mes, comienza con 1 del mes :
         else:
-            print("Last day of mont")
+            print("Last day of month")
 
             fecha_actual2 = two_years_ago.replace(day=1)
             inner_dates['start_date'] = fecha_actual2.strftime("%Y-%m-%d")
